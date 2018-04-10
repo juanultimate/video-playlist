@@ -1,5 +1,5 @@
 import React from "react"
-
+import './media.css'
 class Media extends React.Component {
 	render(){
 	    const styles = {
@@ -12,7 +12,7 @@ class Media extends React.Component {
         }
         }
 		return (
-			<div style={styles.container}>
+			<div className='Media'>
 				<div>
 					<img 
 					src={'./images/covers/bitcoin.jpg'}
@@ -20,7 +20,7 @@ class Media extends React.Component {
 					width={260}
 					height={160}/>
 				</div>
-				<h3>Por que aprender React?</h3>
+				<h3>Por que aprender React?..</h3>
                 <p>Leonidas Esteban</p>
 			</div>
 			)
