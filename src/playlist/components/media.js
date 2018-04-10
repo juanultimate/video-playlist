@@ -2,11 +2,20 @@ import React from "react"
 
 class Media extends React.Component {
 	render(){
+	    const styles = {
+	        container :{
+	            fontSize : 14,
+                color: '#44546b',
+                cursor: 'pointer',
+                width: 260,
+                border: '1px solid red'
+        }
+        }
 		return (
-			<div>
+			<div style={styles.container}>
 				<div>
 					<img 
-					src=""
+					src={'./images/covers/bitcoin.jpg'}
 					alt=""
 					width={260}
 					height={160}/>
