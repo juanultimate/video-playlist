@@ -15,13 +15,13 @@ class Media extends React.Component {
 			<div className='Media'>
 				<div>
 					<img 
-					src={'./images/covers/bitcoin.jpg'}
+					src={this.props.image}
 					alt=""
 					width={260}
 					height={160}/>
 				</div>
-				<h3>Por que aprender React?..</h3>
-                <p>Leonidas Esteban</p>
+				<h3>{this.props.title}</h3>
+                <p>{this.props.author}</p>
 			</div>
 			)
 	}
