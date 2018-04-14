@@ -1,6 +1,17 @@
 import React from "react"
 import './media.css'
+import PropTypes from 'prop-types'
 class Media extends React.Component {
+    state = {
+        playing: 'Stop'
+    }
+
+    handleClick = (event) => {
+        // console.log(this.props.image)
+        this.setState({
+            playing: 'Playing..',
+        })
+    }
 	render(){
 	    const styles = {
 	        container :{
@@ -12,7 +23,7 @@ class Media extends React.Component {
         }
         }
 		return (
-			<div className='Media'>
+			<div className='Media' onClick={this.handleClick}>
 				<div>
 					<img 
 					src={this.props.image}
@@ -22,9 +33,16 @@ class Media extends React.Component {
 				</div>
 				<h3>{this.props.title}</h3>
                 <p>{this.props.author}</p>
+				<p>{this.state.playing}</p>
 			</div>
 			)
 	}
+}
+
+Media.propTypes ={
+	image : PropTypes.string,
+	author : PropTypes.string,
+	title : PropTypes.string
 }
 
 export default Media
