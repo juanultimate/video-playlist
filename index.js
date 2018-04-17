@@ -1,7 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Media from './src/playlist/components/media'
+import Playlist from './src/playlist/components/playlist'
 import Clock from './src/playlist/components/clock.js'
+import data from './src/api.json'
 
 
 
@@ -9,9 +10,7 @@ import Clock from './src/playlist/components/clock.js'
 
 // ReactDOM.render(holaMundo, app)
 const app = document.getElementById("playlist");
-const coldplay = <Media author="Coldplay" title="Hymn for weekend" image="./images/covers/coldplay.jpg"/>
-const jfv = <Media author="Juan Fernando Velasco" title="Misquilla" image="./images/covers/misquilla.jpg"/>
-
-ReactDOM.render(coldplay, app);
+const playlist = <Playlist data={data}/>
+ReactDOM.render(playlist, app);
 
 // console.log('hola mundo');

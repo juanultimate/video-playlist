@@ -34,7 +34,7 @@ class Media extends React.Component {
 			<div className='Media' onClick={this.handleClick}>
 				<div>
 					<img 
-					src={this.props.image}
+					src={this.props.cover}
 					alt=""
 					width={260}
 					height={160}/>
@@ -48,7 +48,7 @@ class Media extends React.Component {
 }
 
 Media.propTypes ={
-	image : PropTypes.string,
+	cover : PropTypes.string,
 	author : PropTypes.string,
 	title : PropTypes.string
 }

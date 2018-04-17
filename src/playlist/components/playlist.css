@@ -1,0 +1,10 @@
+.Playlist-description{
+    color: darkgrey;
+}
+
+.Playlist-title{
+    color: #44546b;
+    white-space: normal;
+    text-transform: uppercase;
+    margin-top: 0;
+}
