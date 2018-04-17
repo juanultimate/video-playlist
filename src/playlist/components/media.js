@@ -1,7 +1,7 @@
-import React from "react"
+import React, {PureComponent} from "react"
 import './media.css'
 import PropTypes from 'prop-types'
-class Media extends React.Component {
+class Media extends PureComponent {
     state = {
         playing: 'Stopped'
     }
